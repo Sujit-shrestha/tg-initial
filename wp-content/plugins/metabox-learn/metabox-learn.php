@@ -243,9 +243,6 @@ class Metabox_learn
         'send_to' => $send_to
       );
       
-      // Apply a filter hook to modify email content
-      $modified_email_data = apply_filters('custom_email_data', $email_data);
-
       // Save data to post || save it in database
       $to_insert = [
         'post_title' => $email_subject,
@@ -259,16 +256,16 @@ class Metabox_learn
       );
 
       // Trigger an action hook with the modified data || As per instruction  : Leaving a action hook with the array data
-      do_action('custom_email_sent',  $modified_email_data);
+      // do_action('custom_email_sent',  $modified_email_data);
 
-      if( class_exists('EmailContentChanger') ){
+      // if( class_exists('EmailContentChanger') || true ){
         $emailContentChangerClass = new EmailContentChanger();
+        $modified_email_data = apply_filters('custom_email_data', $email_data);
+        $saving_modified_data = apply_filters('custom_email_data_save' , $modified_email_data);
 
-      }else{
-        echo '<pre>';
-        print_r( "Class not found heeh" );
-        exit;
-      }
+
+
+    // }
     }
 
   }

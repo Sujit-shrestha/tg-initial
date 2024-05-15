@@ -1991,3 +1991,156 @@ Stack trace:
 [15-May-2024 10:18:17 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
 [15-May-2024 10:22:45 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
 [15-May-2024 10:22:48 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:28:04 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:30:24 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:30:28 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:30:30 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:34:17 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:34:17 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php:37
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Metabox_learn\EmailContentChanger->metabox_learn_save_email_data('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php(14): do_action('custom_email_se...')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\metabox-learn.php(265): Wp_content\Plugins\Metabox_learn\EmailContentChanger->__construct()
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Metabox_learn->testemail_handle_send_email('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\wordpress\wp-admin\admin-post.php(85): do_action('admin_post_send...')
+#9 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php on line 37
+[15-May-2024 10:37:31 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:37:32 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php:39
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Metabox_learn\EmailContentChanger->metabox_learn_save_email_data('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php(16): do_action('custom_email_se...')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\metabox-learn.php(265): Wp_content\Plugins\Metabox_learn\EmailContentChanger->__construct()
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Metabox_learn->testemail_handle_send_email('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\wordpress\wp-admin\admin-post.php(85): do_action('admin_post_send...')
+#9 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php on line 39
+[15-May-2024 10:37:57 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:37:57 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php:39
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Metabox_learn\EmailContentChanger->metabox_learn_save_email_data('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php(16): do_action('custom_email_se...')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\metabox-learn.php(265): Wp_content\Plugins\Metabox_learn\EmailContentChanger->__construct()
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Metabox_learn->testemail_handle_send_email('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\wordpress\wp-admin\admin-post.php(85): do_action('admin_post_send...')
+#9 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php on line 39
+[15-May-2024 10:38:17 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:38:17 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php:39
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Metabox_learn\EmailContentChanger->metabox_learn_save_email_data('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php(16): do_action('custom_email_se...')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\metabox-learn.php(265): Wp_content\Plugins\Metabox_learn\EmailContentChanger->__construct()
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Metabox_learn->testemail_handle_send_email('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\wordpress\wp-admin\admin-post.php(85): do_action('admin_post_send...')
+#9 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php on line 39
+[15-May-2024 10:39:04 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:39:04 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php:39
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Metabox_learn\EmailContentChanger->metabox_learn_save_email_data('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php(16): do_action('custom_email_se...')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\metabox-learn.php(265): Wp_content\Plugins\Metabox_learn\EmailContentChanger->__construct()
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Metabox_learn->testemail_handle_send_email('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\wordpress\wp-admin\admin-post.php(85): do_action('admin_post_send...')
+#9 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php on line 39
+[15-May-2024 10:39:07 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:39:07 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php:39
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Metabox_learn\EmailContentChanger->metabox_learn_save_email_data('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php(16): do_action('custom_email_se...')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\metabox-learn.php(265): Wp_content\Plugins\Metabox_learn\EmailContentChanger->__construct()
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Metabox_learn->testemail_handle_send_email('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\wordpress\wp-admin\admin-post.php(85): do_action('admin_post_send...')
+#9 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php on line 39
+[15-May-2024 10:39:27 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:39:28 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php:39
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Metabox_learn\EmailContentChanger->metabox_learn_save_email_data('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php(16): do_action('custom_email_se...')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\metabox-learn.php(265): Wp_content\Plugins\Metabox_learn\EmailContentChanger->__construct()
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Metabox_learn->testemail_handle_send_email('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\wordpress\wp-admin\admin-post.php(85): do_action('admin_post_send...')
+#9 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php on line 39
+[15-May-2024 10:39:59 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:39:59 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php:37
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Metabox_learn\EmailContentChanger->metabox_learn_save_email_data('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php(14): do_action('custom_email_se...')
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\metabox-learn.php(265): Wp_content\Plugins\Metabox_learn\EmailContentChanger->__construct()
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Metabox_learn->testemail_handle_send_email('')
+#6 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\wordpress\wp-admin\admin-post.php(85): do_action('admin_post_send...')
+#9 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php on line 37
+[15-May-2024 10:47:21 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:47:21 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 10:47:25 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:02:28 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:02:31 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:06:45 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:07:27 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:14:28 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:18:55 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:28:11 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:28:11 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:28:13 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:28:19 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:28:23 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:30:02 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:32:14 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:32:30 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:35:13 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:35:13 UTC] PHP Warning:  Undefined array key "publish" in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php on line 38
+[15-May-2024 11:36:51 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:36:51 UTC] PHP Warning:  Undefined array key "publish" in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\emailContentChanger.php on line 38
+[15-May-2024 11:37:30 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:37:49 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:38:11 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:38:51 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:39:30 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:39:40 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:39:47 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:39:59 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:40:27 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:41:14 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:41:14 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:41:20 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:41:24 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:42:30 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:42:36 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[15-May-2024 11:42:36 UTC] PHP Notice:  Function register_uninstall_hook was called incorrectly. Only a static class method or function can be used in an uninstall hook. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
