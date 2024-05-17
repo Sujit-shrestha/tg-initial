@@ -36,6 +36,7 @@ class Adminmenus
       'Movie',
       'manage_options',
       'admin_movie_menu',
+      'dashicons-admin-tool'
     );
 
     //Loads submenu to the menu
@@ -93,29 +94,30 @@ class Adminmenus
 
       </form>
     </div>
+
     <?php
   }
 
-  //displays content of the seettings submenu
+  //displays content of the Movie_settings submenu
   public function settings_submenu_display()
   {
-
-
     ?>
     <div>
-      <h1>SEttings submenu contents herer !! </h1>
+      <h1>Settings submenu contents here !! </h1>
     </div>
+
     <?php
 
   }
 
+  //display the contents of Movie -> dashboard submenu
   public function mmae_display_options()
   {
 
     // add the section to general settings so we can add our fields to it
     add_settings_section(
       'mmae_settings_section',
-      'Example settings sectin in General Setitngs',
+      'Section',
       [$this, 'mmae_section_callback_function'],
       'admin_movie_submenu_dashboard'
 
@@ -124,7 +126,7 @@ class Adminmenus
     //add the field with the names and funcntion to use for out new settings , put it in out new section
     add_settings_field(
       'mmae_settings_name',
-      'Example setting Name',
+      'Settings Name',
       [$this, 'mmae_settings_callback_function'],
       'admin_movie_submenu_dashboard',
       'mmae_settings_section'
@@ -134,7 +136,7 @@ class Adminmenus
     add_settings_field(
       'dashboard_input',
       'Dashboard input test',
-      [ $this , 'mmae_movie_dashboard_input'],
+      [$this, 'mmae_movie_dashboard_input'],
       'admin_movie_submenu_dashboard',
       'mmae_settings_section'
 
@@ -144,29 +146,104 @@ class Adminmenus
     add_settings_field(
       'dashboard_email__input',
       'Email',
-      [ $this , 'email_field_callback'],
+      [$this, 'email_field_callback'],
       'admin_movie_submenu_dashboard',
       'mmae_settings_section'
     );
 
+    //radio box
+    add_settings_field(
+      'dashboard_radio_input',
+      'Gender',
+      [$this, 'radio_field_callback'],
+      'admin_movie_submenu_dashboard',
+      'mmae_settings_section'
+    );
+
+    //checkbox
+    add_settings_field(
+      'dashboard_checkbox_input',
+      'Ownerships',
+      [$this, 'dashboard_checkbox_input_callback'],
+      'admin_movie_submenu_dashboard',
+      'mmae_settings_section'
+    );
+
+    //dropdown
+    add_settings_field(
+      'select_your_favourite_brand',
+      'Select your favourite brand',
+      [$this, 'select_your_favourite_brand_callback'],
+      'admin_movie_submenu_dashboard',
+      'mmae_settings_section'
+    );
+
+
+
+
+    ///registring fields into groups
     register_setting('header_section', 'mmae_settings_name');
-    register_setting('header_section' , 'dashboard_input');
-    register_setting('header_section' , 'dashboard_email_input' );
+    register_setting('header_section', 'dashboard_input');
+    register_setting('header_section', 'dashboard_email_input');
+    register_setting('header_section', 'dashboard_radio_input');
+    register_setting('header_section', 'dashboard_checkbox_input');
+    register_setting('header_section', 'select_your_favourite_brand');
 
   }
-
-  public function email_field_callback(){
+  public function select_your_favourite_brand_callback()
+  {
+    $option = get_option('select_your_favourite_brand');
     ?>
-    <input type="text" />
+    <select name="select_your_favourite_brand" id="cars">
+      <option value="volvo" <?php selected($option, 'volvo'); ?>>Volvo</option>
+      <option value="saab" <?php selected($option, 'saab'); ?>>Saab</option>
+      <option value="mercedes" <?php selected($option, 'mercedes'); ?>>Mercedes</option>
+      <option value="audi" <?php selected($option, 'audi'); ?>>Audi</option>
+    </select>
+    <?php
+  }
+
+  public function dashboard_checkbox_input_callback()
+  {
+    $options = get_option('dashboard_checkbox_input', []);
+    ?>
+    <input type="checkbox" id="vehicle1" name="dashboard_checkbox_input[]" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="dashboard_checkbox_input[]" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="dashboard_checkbox_input[]" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br><br>
+
+    <?php
+
+  }
+  public function email_field_callback()
+  {
+    $option = get_option('dashboard_email_input');
+    ?>
+    <input type="email" name="dashboard_email_input" value="<?php echo esc_attr($option); ?>" />
+    <?php
+  }
+
+  //radio buttons calllback
+  public function radio_field_callback()
+  {
+    $option = get_option('dashboard_radio_input');
+    ?>
+    <input type="radio" id="male" name="dashboard_radio_input" value="Male" <?php checked($option, 'Male'); ?>>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="dashboard_radio_input" value="Female" <?php checked($option, 'Feale'); ?>>
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="dashboard_radio_input" value="Other" <?php checked($option, 'Other'); ?>>
+    <label for="Other">Other</label>
+
     <?php
   }
   public function mmae_settings_callback_function()
   {
-
-
+    $option = get_option('mmae_settings_name');
     ?>
-    <input type="text" />
-
+    <input type="textarea" name="mmae_settings_name" value="<?php echo esc_attr($option); ?>" />
     <?php
 
   }
@@ -181,9 +258,12 @@ class Adminmenus
     <?php
   }
 
-  public function mmae_movie_dashboard_input(){
+  public function mmae_movie_dashboard_input()
+  {
+  
+     $option = get_option('dashboard_input');
     ?>
-    <input type="text" />
+    <input type="text" name="dashboard_input" value="<?php echo esc_attr($option); ?>" />
     <?php
   }
 
