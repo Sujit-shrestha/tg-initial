@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: Movie Menu Adder
+ * Plugin Name: Movie Menu Adder Extended
  * Description: Adds a Movie Menu in the admin dashboard
  * Version: 2024.5.17
  * Author: Sujit Shrestha
