@@ -39,7 +39,7 @@ class EmailContentChanger {
       'post_status'   => $email_data['publish'],
       'post_type'     => 'ss_sent_mail'
     );
-    print_r($too_insert);
+    print_r($too_insert); 
     print_r(wp_insert_post(
         $too_insert
     ));

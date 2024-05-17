@@ -15,9 +15,15 @@
 defined('ABSPATH') or die('Can\'t access this  file !!');
 
 
-require_once dirname(__FILE__ ) .'/emailContentChanger.php'; 
+require_once dirname(__FILE__) . '/emailContentChanger.php';
+require_once dirname(__FILE__) . '/shortcodes-learn.php';
+require_once dirname(__FILE__) . '/metabox_users_roles.php';
+require_once dirname(__FILE__) .'/metabox_task5_tsb.php';
 
 use Wp_content\Plugins\Metabox_learn\EmailContentChanger;
+use Wp_content\Plugins\Metabox_learn\Shortcodes_learn;
+use Wp_content\Plugins\Metabox_learn\Metabox_users_roles;
+use Wp_content\Plugins\Metabox_learn\Metabox_task5_tsb;
 class Metabox_learn
 {
 
@@ -25,12 +31,15 @@ class Metabox_learn
   {
     //actions
     add_action('init', [$this, 'metaboxlearn_setup_post_type']);
-    add_action( 'init', array( $this, 'register_custom_posttype' ) );
+    add_action('init', array($this, 'register_custom_posttype'));
     add_action('admin_notices', [$this, 'display_activation_message']);
     add_action('add_meta_boxes', [$this, 'wporg_add_custom_box']);
     add_action('save_post', [$this, 'learnMetabox_update_metabox_personal_feelings']);
     add_action('admin_menu', [$this, 'custom_test_email_menu']);
     add_action('admin_post_send_email', [$this, 'testemail_handle_send_email']);
+    add_action('plugins_loaded' , array( $this , 'loadCustomClasses' ));
+  //shortcodes example
+    // add_action( 'init', array( 'Shortcodes_learn', 'init') );
 
 
     //filters
@@ -39,14 +48,36 @@ class Metabox_learn
   }
 
   /**
+   * Loading custom classes
+   * 
+   * @return void
+   */
+
+   public function loadCustomClasses () {
+
+    //loading Shortcodes_learn class
+    new Shortcodes_learn();
+
+    //loading user roles learnign class
+    new Metabox_users_roles();
+
+    //loading class for task 5 : template , shortcode , save un wo_users and wp_metadata
+    new Metabox_task5_tsb();
+
+   
+
+   }
+
+  /**
    * Registering a custom post type for testing
    *
    * @return void
    */
-  public function register_custom_posttype() {
+  public function register_custom_posttype()
+  {
     $args = array();
 
-    register_post_type( 'ss_sent_mail', $args );
+    register_post_type('ss_sent_mail', $args);
   }
 
   /**
@@ -196,10 +227,15 @@ class Metabox_learn
   // Callback function to display Test Email menu page
   function display_test_email_menu()
   {
+  
     // Display your menu page content here
     ?>
     <h1>This is test email page</h1>
+   
+
     <?php
+
+    
   }
 
   // Callback function to display Send Email submenu page
@@ -216,7 +252,7 @@ class Metabox_learn
       <label for="email_content">Email Content: </label>
       <input type="text" name="email_content" id="email_content">
       <label for="send_to">Send to: </label>
-      <input name="send_to" type="text" required/>
+      <input name="send_to" type="text" required />
       <input type="submit" value="Send">
     </form>
 
@@ -234,7 +270,7 @@ class Metabox_learn
       //sanitize the inputs
       $email_subject = sanitize_text_field($_POST['email_subject']);
       $email_content = sanitize_textarea_field($_POST['email_content']);
-      $send_to       = sanitize_email($_POST['send_to']);
+      $send_to = sanitize_email($_POST['send_to']);
 
       // Prepare data array
       $email_data = array(
@@ -242,7 +278,7 @@ class Metabox_learn
         'email_content' => $email_content,
         'send_to' => $send_to
       );
-      
+
       // Save data to post || save it in database
       $to_insert = [
         'post_title' => $email_subject,
@@ -250,22 +286,19 @@ class Metabox_learn
         'post_status' => 'publish',
         'post_type' => 'ss_sent_mail'
       ];
-     
+
       $post_id = wp_insert_post(
         $to_insert
       );
 
-      // Trigger an action hook with the modified data || As per instruction  : Leaving a action hook with the array data
-      // do_action('custom_email_sent',  $modified_email_data);
-
-      // if( class_exists('EmailContentChanger') || true ){
-        $emailContentChangerClass = new EmailContentChanger();
-        $modified_email_data = apply_filters('custom_email_data', $email_data);
-        $saving_modified_data = apply_filters('custom_email_data_save' , $modified_email_data);
+      //email content changer task
+      $emailContentChangerClass = new EmailContentChanger();
+      $modified_email_data = apply_filters('custom_email_data', $email_data);
+      $saving_modified_data = apply_filters('custom_email_data_save', $modified_email_data);
 
 
 
-    // }
+      // }
     }
 
   }
@@ -278,7 +311,7 @@ class Metabox_learn
 if (class_exists('Metabox_learn')) {
   $metabox_learn = new Metabox_learn();
 
- 
+
 }
 
 /**
@@ -302,10 +335,10 @@ register_deactivation_hook(
 /**
  * Uninstalling the plugin
  */
-register_uninstall_hook(
-  __FILE__,
-  [$metabox_learn, 'uninstall']
-);
+// register_uninstall_hook(
+//   __FILE__,
+//   [$metabox_learn, 'uninstall']
+// );
 
 
 
