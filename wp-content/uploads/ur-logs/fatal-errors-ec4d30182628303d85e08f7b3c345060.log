@@ -558,3 +558,149 @@ Stack trace:
 #4 {main}
   thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\metabox_task5_tsb.php on line 128
 
+2024-05-17T13:12:37+05:45 CRITICAL Uncaught Error: Class "Wp_content\Plugins\Metabox_learn\Adminmenus" not found in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie_menu_classloader.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie_menu_classloader.php(28): Wp_content\Plugins\Movie_menu_adder_extended\initializeClasses()
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie-menu-adder.php(21): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie-menu-adder.php(59): MovieMenuAdder->__construct()
+#3 C:\xampp\htdocs\wordpress\wp-admin\includes\plugin.php(2389): include_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-admin\includes\plugin.php(675): plugin_sandbox_scrape('movie-menu-adde...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\plugins.php(60): activate_plugin('movie-menu-adde...', 'http://localhos...', false)
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie_menu_classloader.php on line 17
+
+2024-05-17T14:04:02+05:45 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "" in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 324
+
+2024-05-17T14:15:58+05:45 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "mmae_settings_callback_funciton" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('theme-options', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(84): do_settings_sections('theme-options')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+
+2024-05-17T14:16:57+05:45 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "mmae_settings_callback_funciton" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('theme-options', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(88): do_settings_sections('theme-options')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+
+2024-05-17T14:17:56+05:45 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "mmae_settings_callback_funciton" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('theme-options', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(88): do_settings_sections('theme-options')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+
+2024-05-17T14:31:23+05:45 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "mmae_settings_callback_funciton" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('admin_movie_sub...', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(88): do_settings_sections('admin_movie_sub...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+
+2024-05-17T14:35:35+05:45 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "mmae_settings_callback_funciton" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('admin_movie_sub...', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(88): do_settings_sections('admin_movie_sub...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+
+2024-05-17T14:40:43+05:45 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_settings_field(), 1 passed in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 134 and at least 4 expected in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1712
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(134): add_settings_field('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->mmae_display_options('')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1712
+
+2024-05-17T14:42:44+05:45 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_settings_field(), 3 passed in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 134 and at least 4 expected in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1712
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(134): add_settings_field('dashboard_input', 'Dashboard input...', Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->mmae_display_options('')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1712
+
+2024-05-17T14:44:32+05:45 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "mmae_settings_callback_funciton" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('admin_movie_sub...', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(88): do_settings_sections('admin_movie_sub...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+
+2024-05-17T14:48:31+05:45 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_settings_field(), 1 passed in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 144 and at least 4 expected in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1712
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(144): add_settings_field('dashboard_email...')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->mmae_display_options('')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1712
+
+2024-05-17T15:00:15+05:45 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_settings_field(), 3 passed in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 153 and at least 4 expected in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1712
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(153): add_settings_field('dashboard_radio...', 'Gender', Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->mmae_display_options('')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1712
+
+2024-05-17T15:42:48+05:45 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_settings_field(), 1 passed in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 172 and at least 4 expected in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1712
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(172): add_settings_field('dashboard_texta...')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->mmae_display_options('')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1712
+
+2024-05-17T15:47:20+05:45 CRITICAL Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "introduce_yourself_callback" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('admin_movie_sub...', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(88): do_settings_sections('admin_movie_sub...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+

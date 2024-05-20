@@ -3296,3 +3296,172 @@ Stack trace:
   thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metabox-learn\metabox-learn.php on line 22
 [17-May-2024 06:13:30 UTC] PHP Notice:  Function is_embed was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
 [17-May-2024 06:13:30 UTC] PHP Notice:  Function is_search was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[17-May-2024 07:27:37 UTC] PHP Fatal error:  Uncaught Error: Class "Wp_content\Plugins\Metabox_learn\Adminmenus" not found in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie_menu_classloader.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie_menu_classloader.php(28): Wp_content\Plugins\Movie_menu_adder_extended\initializeClasses()
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie-menu-adder.php(21): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie-menu-adder.php(59): MovieMenuAdder->__construct()
+#3 C:\xampp\htdocs\wordpress\wp-admin\includes\plugin.php(2389): include_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-admin\includes\plugin.php(675): plugin_sandbox_scrape('movie-menu-adde...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\plugins.php(60): activate_plugin('movie-menu-adde...', 'http://localhos...', false)
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie_menu_classloader.php on line 17
+[17-May-2024 07:53:46 UTC] PHP Parse error:  Unclosed '{' on line 69 in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 81
+[17-May-2024 07:58:22 UTC] PHP Parse error:  Unclosed '{' on line 44 does not match ')' in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 64
+[17-May-2024 07:58:25 UTC] PHP Parse error:  Unclosed '{' on line 44 does not match ')' in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 64
+[17-May-2024 07:58:25 UTC] PHP Notice:  Function is_embed was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[17-May-2024 07:58:25 UTC] PHP Notice:  Function is_search was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[17-May-2024 08:19:02 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "" in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 324
+[17-May-2024 08:20:51 UTC] PHP Parse error:  Unmatched '}' in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 89
+[17-May-2024 08:20:51 UTC] PHP Notice:  Function is_embed was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[17-May-2024 08:20:51 UTC] PHP Notice:  Function is_search was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[17-May-2024 08:26:02 UTC] PHP Fatal error:  Uncaught Error: Class "Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus" not found in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie_menu_classloader.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie_menu_classloader.php(28): Wp_content\Plugins\Movie_menu_adder_extended\initializeClasses()
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie-menu-adder.php(21): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie-menu-adder.php(59): MovieMenuAdder->__construct()
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(517): include_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(105): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie_menu_classloader.php on line 17
+[17-May-2024 08:26:02 UTC] PHP Notice:  Function is_embed was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[17-May-2024 08:26:02 UTC] PHP Notice:  Function is_search was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[17-May-2024 08:26:04 UTC] PHP Fatal error:  Uncaught Error: Class "Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus" not found in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie_menu_classloader.php:17
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie_menu_classloader.php(28): Wp_content\Plugins\Movie_menu_adder_extended\initializeClasses()
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie-menu-adder.php(21): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie-menu-adder.php(59): MovieMenuAdder->__construct()
+#3 C:\xampp\htdocs\wordpress\wp-settings.php(517): include_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-config.php(105): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\movie_menu_classloader.php on line 17
+[17-May-2024 08:26:04 UTC] PHP Notice:  Function is_embed was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[17-May-2024 08:26:04 UTC] PHP Notice:  Function is_search was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[17-May-2024 08:30:58 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "mmae_settings_callback_funciton" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('theme-options', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(84): do_settings_sections('theme-options')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+[17-May-2024 08:31:57 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "mmae_settings_callback_funciton" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('theme-options', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(88): do_settings_sections('theme-options')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+[17-May-2024 08:32:56 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "mmae_settings_callback_funciton" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('theme-options', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(88): do_settings_sections('theme-options')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+[17-May-2024 08:46:23 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "mmae_settings_callback_funciton" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('admin_movie_sub...', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(88): do_settings_sections('admin_movie_sub...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+[17-May-2024 08:50:35 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "mmae_settings_callback_funciton" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('admin_movie_sub...', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(88): do_settings_sections('admin_movie_sub...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+[17-May-2024 08:55:43 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_settings_field(), 1 passed in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 134 and at least 4 expected in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1712
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(134): add_settings_field('')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->mmae_display_options('')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1712
+[17-May-2024 08:57:44 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_settings_field(), 3 passed in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 134 and at least 4 expected in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1712
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(134): add_settings_field('dashboard_input', 'Dashboard input...', Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->mmae_display_options('')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1712
+[17-May-2024 08:59:32 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "mmae_settings_callback_funciton" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('admin_movie_sub...', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(88): do_settings_sections('admin_movie_sub...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+[17-May-2024 09:03:31 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_settings_field(), 1 passed in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 144 and at least 4 expected in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1712
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(144): add_settings_field('dashboard_email...')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->mmae_display_options('')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1712
+[17-May-2024 09:05:31 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 156
+[17-May-2024 09:15:15 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_settings_field(), 3 passed in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 153 and at least 4 expected in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1712
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(153): add_settings_field('dashboard_radio...', 'Gender', Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->mmae_display_options('')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1712
+[17-May-2024 09:53:26 UTC] PHP Parse error:  Unclosed '(' on line 163 does not match ']' in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 166
+[17-May-2024 09:55:27 UTC] PHP Parse error:  syntax error, unexpected token "public", expecting "(" in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 186
+[17-May-2024 09:57:48 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_settings_field(), 1 passed in C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php on line 172 and at least 4 expected in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1712
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(172): add_settings_field('dashboard_texta...')
+#1 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->mmae_display_options('')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#3 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(45): do_action('admin_init')
+#5 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1712
+[17-May-2024 10:02:20 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func(): Argument #1 ($callback) must be a valid callback, class Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus does not have a method "introduce_yourself_callback" in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php:1836
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-admin\includes\template.php(1790): do_settings_fields('admin_movie_sub...', 'mmae_settings_s...')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\movie-menu-adder-extended\adminmenus_task6.php(88): do_settings_sections('admin_movie_sub...')
+#2 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Wp_content\Plugins\Movie_menu_adder_extended\Adminmenus->dashboard_contents_display('')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
