@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: Metadata and metabox
- * Description: Adds a Movie Menu in the admin dashboard
+ * Description: Adds metadata and metabox
  * Version: 2024.5.20
  * Author: Sujit Shrestha
  * Author URI: https://linkedin.com/in/mrsujiit
@@ -11,12 +11,12 @@
 
  defined('ABSPATH') or die( 'Unauthorized to access this file!!' );
 
- 
- class MetadataMetabox{
+ require_once dirname(__FILE__) .'/autoloader.php';
+ class Metadata_metabox{
 
   public function __construct(){
 
-   
+   new Plugins\Metadata_metabox\Metadata_manage();
 
 
   }
@@ -48,9 +48,9 @@
  }
 
  //class object instantiation
- if(class_exists( 'MetadataMetabox' )){
+ if(class_exists( 'Metadata_metabox' )){
   //initialize
-    $meta = new MetadataMetabox();
+    $meta = new Metadata_metabox();
  }
 
  /**

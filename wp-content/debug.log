@@ -3465,3 +3465,279 @@ Stack trace:
 #5 C:\xampp\htdocs\wordpress\wp-admin\admin.php(259): do_action('movie_page_admi...')
 #6 {main}
   thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
+[20-May-2024 04:57:46 UTC] PHP Fatal error:  Uncaught Error: Class "Plugins\Metadata_metabox\Metadata_manage" not found in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php(53): MetadataMetabox->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-admin\includes\plugin.php(2389): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-admin\includes\plugin.php(675): plugin_sandbox_scrape('metadata_metabo...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\plugins.php(60): activate_plugin('metadata_metabo...', 'http://localhos...', false)
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 19
+[20-May-2024 05:22:29 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:22:29 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:23:00 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:23:00 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:24:30 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:24:30 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:26:31 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:26:31 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:28:32 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:28:32 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:30:33 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:30:33 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:32:34 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:32:34 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:34:35 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:34:35 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:36:36 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:36:36 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:38:37 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:38:37 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:40:38 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:40:38 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:40:39 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:40:39 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:42:39 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:42:39 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:44:40 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:44:40 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:46:41 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:46:41 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:48:42 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:48:42 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:50:43 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:50:43 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:52:44 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:52:44 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 05:54:45 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 05:54:45 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 06:08:38 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 06:08:38 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 06:10:37 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 06:10:37 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 06:12:38 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 06:12:38 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 06:14:39 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 06:14:39 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(metadataMetaboxphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'metadataMetaboxphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 06:16:40 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(userRegistrationphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'userRegistrationphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(uR_Statsphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'uR_Statsphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(colorMag_Constantsphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'colorMag_Constantsphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(colorMag_Adminphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'colorMag_Adminphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(colorMag_Dynamic_Filterphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'colorMag_Dynamic_Filterphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(colorMag_Css_Classesphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'colorMag_Css_Classesphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(colorMag_After_Setup_Themephp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'colorMag_After_Setup_Themephp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(colorMag_Enqueue_Scriptsphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'colorMag_Enqueue_Scriptsphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(colorMag_WebFont_Loaderphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'colorMag_WebFont_Loaderphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(colorMag_Migrationphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'colorMag_Migrationphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(colorMag_SVG_Iconsphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'colorMag_SVG_Iconsphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(wooCommercephp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'wooCommercephp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(wP_Site_Healthphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'wP_Site_Healthphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(uR_Shortcodesphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:16:40 UTC] PHP Warning:  include(): Failed opening 'uR_Shortcodesphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(metadataMetaboxphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'metadataMetaboxphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 61
+[20-May-2024 06:17:15 UTC] PHP Warning:  Undefined variable $meta in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 70
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(userRegistrationphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'userRegistrationphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(uR_Statsphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'uR_Statsphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(uR_Form_Handlerphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'uR_Form_Handlerphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(colorMag_Constantsphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'colorMag_Constantsphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(colorMag_Adminphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'colorMag_Adminphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(colorMag_Dynamic_Filterphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'colorMag_Dynamic_Filterphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(colorMag_Css_Classesphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'colorMag_Css_Classesphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(colorMag_After_Setup_Themephp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'colorMag_After_Setup_Themephp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(colorMag_Enqueue_Scriptsphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'colorMag_Enqueue_Scriptsphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(colorMag_WebFont_Loaderphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'colorMag_WebFont_Loaderphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(colorMag_Migrationphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'colorMag_Migrationphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(colorMag_SVG_Iconsphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'colorMag_SVG_Iconsphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(wooCommercephp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'wooCommercephp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(wP_Site_Healthphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'wP_Site_Healthphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(uR_Session_Handlerphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'uR_Session_Handlerphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(uR_Shortcodesphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:15 UTC] PHP Warning:  include(): Failed opening 'uR_Shortcodesphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:17 UTC] PHP Warning:  include(wP_Automatic_Updaterphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:17 UTC] PHP Warning:  include(): Failed opening 'wP_Automatic_Updaterphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:17 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, first array member is not a valid class name or object in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-admin\includes\plugin.php(828): do_action('deactivate_meta...', false)
+#3 C:\xampp\htdocs\wordpress\wp-admin\plugins.php(211): deactivate_plugins('metadata_metabo...', false, false)
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 324
+[20-May-2024 06:17:17 UTC] PHP Warning:  include(uR_Loggerphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:17 UTC] PHP Warning:  include(): Failed opening 'uR_Loggerphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:17 UTC] PHP Warning:  include(uR_Log_Handler_Filephp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:17 UTC] PHP Warning:  include(): Failed opening 'uR_Log_Handler_Filephp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:17 UTC] PHP Warning:  include(uR_Log_Levelsphp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:17:17 UTC] PHP Warning:  include(): Failed opening 'uR_Log_Levelsphp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 9
+[20-May-2024 06:24:40 UTC] PHP Warning:  include(metadata_managephp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 11
+[20-May-2024 06:24:40 UTC] PHP Warning:  include(): Failed opening 'metadata_managephp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 11
+[20-May-2024 06:24:40 UTC] PHP Fatal error:  Uncaught Error: Class "Plugins\Metadata_metabox\Metadata_manage" not found in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php(53): Metadata_metabox->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-settings.php(517): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-config.php(105): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 19
+[20-May-2024 06:24:40 UTC] PHP Notice:  Function is_embed was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[20-May-2024 06:24:40 UTC] PHP Notice:  Function is_search was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[20-May-2024 06:27:43 UTC] PHP Warning:  include(metadata_managephp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:27:43 UTC] PHP Warning:  include(): Failed opening 'metadata_managephp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:27:43 UTC] PHP Fatal error:  Uncaught Error: Class "Plugins\Metadata_metabox\Metadata_manage" not found in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php(53): Metadata_metabox->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-settings.php(517): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-config.php(105): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 19
+[20-May-2024 06:27:43 UTC] PHP Notice:  Function is_embed was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[20-May-2024 06:27:43 UTC] PHP Notice:  Function is_search was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[20-May-2024 06:28:07 UTC] PHP Warning:  include(metadata_managephp): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:07 UTC] PHP Warning:  include(): Failed opening 'metadata_managephp' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:07 UTC] PHP Fatal error:  Uncaught Error: Class "Plugins\Metadata_metabox\Metadata_manage" not found in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php(53): Metadata_metabox->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-settings.php(517): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-config.php(105): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpress\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-admin\plugins.php(10): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 19
+[20-May-2024 06:28:07 UTC] PHP Notice:  Function is_embed was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[20-May-2024 06:28:07 UTC] PHP Notice:  Function is_search was called incorrectly. Conditional query tags do not work before the query is run. Before then, they always return false. Please see <a>Debugging in WordPress</a> for more information. (This message was added in version 3.1.0.) in C:\xampp\htdocs\wordpress\wp-includes\functions.php on line 6078
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(userRegistration.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'userRegistration.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(uR_Stats.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'uR_Stats.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(uR_Form_Handler.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'uR_Form_Handler.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(colorMag_Constants.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'colorMag_Constants.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(colorMag_Admin.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'colorMag_Admin.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(colorMag_Dynamic_Filter.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'colorMag_Dynamic_Filter.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(colorMag_Css_Classes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'colorMag_Css_Classes.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(colorMag_After_Setup_Theme.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'colorMag_After_Setup_Theme.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(colorMag_Enqueue_Scripts.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'colorMag_Enqueue_Scripts.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(colorMag_WebFont_Loader.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'colorMag_WebFont_Loader.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(colorMag_Migration.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'colorMag_Migration.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(colorMag_SVG_Icons.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'colorMag_SVG_Icons.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(wooCommerce.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'wooCommerce.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(wP_Site_Health.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'wP_Site_Health.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(uR_Session_Handler.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'uR_Session_Handler.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(uR_Shortcodes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:30 UTC] PHP Warning:  include(): Failed opening 'uR_Shortcodes.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:31 UTC] PHP Warning:  include(wP_Automatic_Updater.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:31 UTC] PHP Warning:  include(): Failed opening 'wP_Automatic_Updater.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(userRegistration.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'userRegistration.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(uR_Stats.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'uR_Stats.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(uR_Form_Handler.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'uR_Form_Handler.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(colorMag_Constants.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'colorMag_Constants.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(colorMag_Admin.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'colorMag_Admin.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(colorMag_Dynamic_Filter.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'colorMag_Dynamic_Filter.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(colorMag_Css_Classes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'colorMag_Css_Classes.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(colorMag_After_Setup_Theme.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'colorMag_After_Setup_Theme.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(colorMag_Enqueue_Scripts.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'colorMag_Enqueue_Scripts.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(colorMag_WebFont_Loader.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'colorMag_WebFont_Loader.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(colorMag_Migration.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'colorMag_Migration.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(colorMag_SVG_Icons.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'colorMag_SVG_Icons.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(wooCommerce.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'wooCommerce.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(wP_Site_Health.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'wP_Site_Health.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(uR_Session_Handler.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'uR_Session_Handler.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(uR_Shortcodes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'uR_Shortcodes.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(wP_Automatic_Updater.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:41 UTC] PHP Warning:  include(): Failed opening 'wP_Automatic_Updater.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(userRegistration.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(): Failed opening 'userRegistration.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(uR_Stats.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(): Failed opening 'uR_Stats.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(colorMag_Constants.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(): Failed opening 'colorMag_Constants.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(colorMag_Admin.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(): Failed opening 'colorMag_Admin.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(colorMag_Dynamic_Filter.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(): Failed opening 'colorMag_Dynamic_Filter.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(colorMag_Css_Classes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(): Failed opening 'colorMag_Css_Classes.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(colorMag_After_Setup_Theme.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(): Failed opening 'colorMag_After_Setup_Theme.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(colorMag_Enqueue_Scripts.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(): Failed opening 'colorMag_Enqueue_Scripts.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(colorMag_WebFont_Loader.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(): Failed opening 'colorMag_WebFont_Loader.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(colorMag_Migration.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(): Failed opening 'colorMag_Migration.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(colorMag_SVG_Icons.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(): Failed opening 'colorMag_SVG_Icons.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(wooCommerce.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(): Failed opening 'wooCommerce.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(wP_Site_Health.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(): Failed opening 'wP_Site_Health.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:47 UTC] PHP Warning:  include(uR_Shortcodes.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15
+[20-May-2024 06:28:48 UTC] PHP Warning:  include(): Failed opening 'uR_Shortcodes.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\autoloader.php on line 15

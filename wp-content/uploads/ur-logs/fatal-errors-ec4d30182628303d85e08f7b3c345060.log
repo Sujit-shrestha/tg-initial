@@ -704,3 +704,21 @@ Stack trace:
 #6 {main}
   thrown in C:\xampp\htdocs\wordpress\wp-admin\includes\template.php on line 1836
 
+2024-05-20T10:42:46+05:45 CRITICAL Uncaught Error: Class "Plugins\Metadata_metabox\Metadata_manage" not found in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php(53): MetadataMetabox->__construct()
+#1 C:\xampp\htdocs\wordpress\wp-admin\includes\plugin.php(2389): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-admin\includes\plugin.php(675): plugin_sandbox_scrape('metadata_metabo...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\plugins.php(60): activate_plugin('metadata_metabo...', 'http://localhos...', false)
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\metadata_metabox.php on line 19
+
+2024-05-20T12:02:17+05:45 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, first array member is not a valid class name or object in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpress\wp-admin\includes\plugin.php(828): do_action('deactivate_meta...', false)
+#3 C:\xampp\htdocs\wordpress\wp-admin\plugins.php(211): deactivate_plugins('metadata_metabo...', false, false)
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 324
+
