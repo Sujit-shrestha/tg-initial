@@ -40,9 +40,7 @@ function wporg_shortcode( $atts = [], $content = null, $tag = '' ) {
 
 	// enclosing tags
 	if ( ! is_null( $content ) ) {
-		// $content here holds everything in between the opening and the closing tags of your shortcode. eg.g [my-shortcode]content[/my-shortcode].
-        // Depending on what your shortcode supports, you will parse and append the content to your output in different ways.
-		// In this example, we just secure output by executing the_content filter hook on $content.
+		
 		$o .= apply_filters( 'the_content', $content );
 	}
 
