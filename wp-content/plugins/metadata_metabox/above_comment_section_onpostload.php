@@ -17,9 +17,7 @@ class Above_comment_section_onpostload
     
   }
 
-
-  //tempkate for display the data 
-  //chaidaina jasto xa
+  //template for display the data 
 
   public function data_above_comment_in_posts($data){
 
