@@ -26,9 +26,10 @@ class Above_comment_section_onpostload
     ?>
 
     <div class="">
-      <h1>textbox data :</h1>
+      <h1>POST META DATA</h1>
 
-      <?php $data ;
+      <?php 
+    
       //putting the shortcode into the html 
            echo do_shortcode('[themegrillshortcode]')  
       ?>
@@ -43,7 +44,7 @@ class Above_comment_section_onpostload
 public function retrieve_data_from_postmeta( $post_id){
  $data = get_post_meta( $post_id );
 
- $this->data_above_comment_in_posts( $data );
+ return $data;
 }
 
 //creating shortcode to display the post meta data
@@ -65,15 +66,22 @@ function mm_shortcode( $atts = [], $content = null, $tag = '' ) {
 	// normalize attribute keys, lowercase
 	$atts = array_change_key_case( (array) $atts, CASE_LOWER );
 
+  //getting data of the post using post->ID
+  if (is_single()) {
+    global $post;
+    $data = $this->retrieve_data_from_postmeta($post->ID);
+
+  }
+
 	// override default attributes with user attributes
 	$post_meta_data = shortcode_atts(
 		array(
-			'textbox' => 'textbox_data',
-      'dropdown' => 'dropdown_data',
-      'textarea' => 'textarea_data'
+			'textbox' => $data['_onpostload_mb_textbox'][0] ?? 'textbox_data',
+      'dropdown' => $data['_onpostload_mb_dropdown'][0] ?? 'dropdown_data',
+      'textarea' => $data['_onpostlaod_mb_textarea'][0] ?? 'textarea_data',
+      'totalViews' => $data['total_number_of_views'][0]
 		), $atts, $tag
-	);
-
+	);  
 
 	// start box
 	$o = '<div class="wporg-box" style="border:1px solid black">';
@@ -82,6 +90,7 @@ function mm_shortcode( $atts = [], $content = null, $tag = '' ) {
 	$o .= '<h2> Textbox : ' . esc_html( $post_meta_data['textbox'] ) . '</h2>';
   $o .= '<h2> Dropdown : ' . esc_html( $post_meta_data['dropdown'] ) . '</h2>';
   $o .= '<h2> Textarea : ' . esc_html( $post_meta_data['textarea'] ) . '</h2>';
+  $o .= '<h3> Total Views : ' . esc_html( $post_meta_data['totalViews'] ) . '</h3>';
 
 	// enclosing tags
 	if ( ! is_null( $content ) ) {

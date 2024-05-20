@@ -730,3 +730,131 @@ Stack trace:
 #3 {main}
   thrown in C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php on line 324
 
+2024-05-20T14:57:57+05:45 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php:83
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(433): Plugins\Metadata_metabox\Above_comment_section_onpostload->mm_shortcode(Array, '', 'themegrillshort...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(themeg...', 'do_shortcode_ta...', '[themegrillshor...')
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php(34): do_shortcode('[themegrillshor...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Plugins\Metadata_metabox\Above_comment_section_onpostload->data_above_comment_in_posts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\colormag\single.php(68): do_action('colormag_before...')
+#8 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php on line 83
+
+2024-05-20T15:00:53+05:45 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php:84
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(433): Plugins\Metadata_metabox\Above_comment_section_onpostload->mm_shortcode(Array, '', 'themegrillshort...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(themeg...', 'do_shortcode_ta...', '[themegrillshor...')
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php(34): do_shortcode('[themegrillshor...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Plugins\Metadata_metabox\Above_comment_section_onpostload->data_above_comment_in_posts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\colormag\single.php(68): do_action('colormag_before...')
+#8 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php on line 84
+
+2024-05-20T15:01:06+05:45 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php:84
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(433): Plugins\Metadata_metabox\Above_comment_section_onpostload->mm_shortcode(Array, '', 'themegrillshort...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(themeg...', 'do_shortcode_ta...', '[themegrillshor...')
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php(34): do_shortcode('[themegrillshor...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Plugins\Metadata_metabox\Above_comment_section_onpostload->data_above_comment_in_posts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\colormag\single.php(68): do_action('colormag_before...')
+#8 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php on line 84
+
+2024-05-20T15:03:21+05:45 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php:84
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(433): Plugins\Metadata_metabox\Above_comment_section_onpostload->mm_shortcode(Array, '', 'themegrillshort...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(themeg...', 'do_shortcode_ta...', '[themegrillshor...')
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php(34): do_shortcode('[themegrillshor...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Plugins\Metadata_metabox\Above_comment_section_onpostload->data_above_comment_in_posts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\colormag\single.php(68): do_action('colormag_before...')
+#8 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php on line 84
+
+2024-05-20T15:03:39+05:45 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php:84
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(433): Plugins\Metadata_metabox\Above_comment_section_onpostload->mm_shortcode(Array, '', 'themegrillshort...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(themeg...', 'do_shortcode_ta...', '[themegrillshor...')
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php(34): do_shortcode('[themegrillshor...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Plugins\Metadata_metabox\Above_comment_section_onpostload->data_above_comment_in_posts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\colormag\single.php(68): do_action('colormag_before...')
+#8 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php on line 84
+
+2024-05-20T15:48:11+05:45 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php:84
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(433): Plugins\Metadata_metabox\Above_comment_section_onpostload->mm_shortcode(Array, '', 'themegrillshort...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(themeg...', 'do_shortcode_ta...', '[themegrillshor...')
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php(34): do_shortcode('[themegrillshor...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Plugins\Metadata_metabox\Above_comment_section_onpostload->data_above_comment_in_posts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\colormag\single.php(68): do_action('colormag_before...')
+#8 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php on line 84
+
+2024-05-20T15:48:47+05:45 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php:84
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(433): Plugins\Metadata_metabox\Above_comment_section_onpostload->mm_shortcode(Array, '', 'themegrillshort...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(themeg...', 'do_shortcode_ta...', '[themegrillshor...')
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php(34): do_shortcode('[themegrillshor...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Plugins\Metadata_metabox\Above_comment_section_onpostload->data_above_comment_in_posts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\colormag\single.php(68): do_action('colormag_before...')
+#8 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php on line 84
+
+2024-05-20T15:49:04+05:45 CRITICAL Uncaught TypeError: Cannot access offset of type string on string in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php:84
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(433): Plugins\Metadata_metabox\Above_comment_section_onpostload->mm_shortcode(Array, '', 'themegrillshort...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(themeg...', 'do_shortcode_ta...', '[themegrillshor...')
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php(34): do_shortcode('[themegrillshor...')
+#4 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): Plugins\Metadata_metabox\Above_comment_section_onpostload->data_above_comment_in_posts('')
+#5 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpress\wp-content\themes\colormag\single.php(68): do_action('colormag_before...')
+#8 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\metadata_metabox\above_comment_section_onpostload.php on line 84
+
