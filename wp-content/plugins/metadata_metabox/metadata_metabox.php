@@ -15,8 +15,11 @@
  class Metadata_metabox{
 
   public function __construct(){
-
+    //manages meatadata  : testing 
    new Plugins\Metadata_metabox\Metadata_manage();
+
+   //adds metabox to the screens
+   new Plugins\Metadata_metabox\Metabox_adder();
 
 
   }
@@ -42,8 +45,6 @@
 
 
   }
-
-
 
  }
 
