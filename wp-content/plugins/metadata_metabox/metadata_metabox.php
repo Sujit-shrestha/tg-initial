@@ -21,6 +21,9 @@
    //adds metabox to the screens
    new Plugins\Metadata_metabox\Metabox_adder();
 
+   //adds the post meta data above comment seciotn 
+   new Plugins\Metadata_metabox\Above_comment_section_onpostload();
+
 
   }
 
