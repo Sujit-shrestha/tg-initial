@@ -1,8 +1,8 @@
-<?php
+<?php 
 
 /**
- * Plugin Name: Metadata and metabox
- * Description: Adds metadata and metabox
+ * Plugin Name: Custom Post Type 
+ * Description: Adds custom post type called Movie
  * Version: 2024.5.20
  * Author: Sujit Shrestha
  * Author URI: https://linkedin.com/in/mrsujiit
@@ -12,25 +12,14 @@
  defined('ABSPATH') or die( 'Unauthorized to access this file!!' );
 
  require_once dirname(__FILE__) .'/autoloader.php';
- class Metadata_metabox{
 
+ class Custom_post_themegrill
+ {
   public function __construct(){
-    //manages meatadata  : basic 
-   new Plugins\Metadata_metabox\Metadata_manage();
 
-   //adds metabox to the screens
-   new Plugins\Metadata_metabox\Metabox_adder();
-
-   //adds the post meta data above comment seciotn 
-   new Plugins\Metadata_metabox\Above_comment_section_onpostload();
-
-
+    //movie  : custom post type init
+    new Plugins\Metadata_metabox\MoviePostType_customposttype();
   }
-
-
-  /**
-   * Activation
-   */
   public function activate (){
 
     //flush rewrite rules
@@ -52,9 +41,9 @@
  }
 
  //class object instantiation
- if(class_exists( 'Metadata_metabox' )){
+ if(class_exists( 'Custom_post_themegrill' )){
   //initialize
-    $meta = new Metadata_metabox();
+    $meta = new Custom_post_themegrill();
  }
 
  /**
@@ -73,3 +62,5 @@ register_activation_hook(
   __FILE__,
   array( $meta , 'deactivate' )
  );
+ 
+ 
