@@ -3,6 +3,7 @@
 namespace Plugins\Role_using_ajax;
 
 use Plugins\Role_using_ajax\Manage_user_role_usingAJAx as RoleManager;
+defined( 'ABSPATH' ) || exit;
 
 class Role_registration_template_shortcode{
   //class instance of 
@@ -30,6 +31,8 @@ class Role_registration_template_shortcode{
 	$atts = array_change_key_case( (array) $atts, CASE_LOWER );
 
   $o = '<div class="wporg-box">';
+  $o .= "<p1>";
+  $o .= __( 'Twenty two' ,'twentytwo' );
 
  //get the template for user registration role
 $o .= $this->roleManager->role_form_template();

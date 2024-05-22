@@ -2,20 +2,36 @@
 
 namespace Plugins\Role_using_ajax;
 
+defined('ABSPATH') || exit;
+/**
+ * Addes Template for the ajax request  , handles the form input , adds role using the data from form
+ */
 class Manage_user_role_usingAJAx
 {
+  /**
+   * Constructor
+   */
   public function __construct()
   {
+    //initiates all hooks
+    $this->initHooks();
+  }
 
-    //uses 
-
+  /**
+   * Initiates hooks
+   *
+   * @return void
+   */
+  private function initHooks()
+  {
 
     //actions
-    add_action('wp_ajax_custom_action', array($this, 'role_form_handler') );
-    add_action('wp_ajax_nopriv_custom_action', array($this, 'role_form_handler') );
-    add_action('roleusingajax_add_user_role' , array( $this , 'role_adder' ));
-//adding js
-    add_action( 'admin_enqueue_scripts', array( $this , 'my_enqueue' ) );
+    add_action('wp_ajax_custom_action', array($this, 'role_form_handler'));
+    add_action('wp_ajax_nopriv_custom_action', array($this, 'role_form_handler'));
+    add_action('roleusingajax_add_user_role', array($this, 'role_adder'));
+
+    //adding js
+    // add_action('admin_enqueue_scripts', array($this, 'my_enqueue'));
 
     // add_action('wp_ajax_contact_us' , array( $this , 'ajax_contact_us_form_handler' ));
 
@@ -54,42 +70,35 @@ class Manage_user_role_usingAJAx
 
     
     ';
-  
+
     return $o;
 
   }
 
-  function my_enqueue( $hook ) {
-    
-    
-    // wp_enqueue_script('customjs' , 'js/sujittheme.js' , [] , '1.0' , true);
-
-  }
-
-/**
- * Handles user role data sent by the user using form
- *
- * @return void
- */
-  public function role_form_handler(  )
+  /**
+   * Handles user role data sent by the user using form
+   *
+   * @return void
+   */
+  public function role_form_handler()
   {
     //parsing the serialized string
-    parse_str( $_POST["data"] , $test );
-  
+    parse_str($_POST["data"], $test);
+
     $userdata = [];
     //sanitizaiton task
     $userRole = sanitize_text_field($test["user_role"]);
     $temp = [];
     $userdata["user_role"] = $userRole;
     // $user capabilities
-    foreach( $test as $key => $value ){
-      if(str_starts_with( $key , 'usercap_' )){
-        $temp[explode('usercap_' , $key)[1]] = sanitize_text_field($value) ;
+    foreach ($test as $key => $value) {
+      if (str_starts_with($key, 'usercap_')) {
+        $temp[explode('usercap_', $key)[1]] = sanitize_text_field($value);
       }
       continue;
     }
     $userdata["capabilities"] = $temp;
-    
+
 
     // if (
     //   !isset($_POST['name_of_nonce_field'])
@@ -107,26 +116,19 @@ class Manage_user_role_usingAJAx
 
     // }
 
-    //default response
-    $response = array(
-      'error' => false,
-    );
 
-    
+
+
 
 
     //leaving a hook to add the role to the user roles
 
-    do_action('roleusingajax_add_user_role' , $userdata );
+    do_action('roleusingajax_add_user_role', $userdata);
 
+   wp_send_json_success( array( "message" => __( "Data received successfully!!")  , 'data' => $userdata) );
 
-    // Don't forget to exit at the end of processing
-    $response = [
-      'status' => true,
-      'message' => 'Data received successfully !!',
-      'data' => $userdata
-    ];
-    exit(json_encode($response, JSON_PRETTY_PRINT));
+   wp_send_json_error( array( "message" => __( "Error while processing data !!" ) , 'data' => [] ));
+    
   }
 
 
@@ -138,7 +140,7 @@ class Manage_user_role_usingAJAx
     add_role(
       $role_data["user_role"],
       ucfirst($role_data["user_role"]),
-       $role_data["capabilities"] ,
+      $role_data["capabilities"],
 
     );
 
