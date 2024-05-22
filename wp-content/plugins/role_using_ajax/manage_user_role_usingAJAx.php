@@ -87,7 +87,7 @@ class Manage_user_role_usingAJAx
 
 
     //check if the nonce is valid
-    if (!wp_verify_nonce($_POST['nonce'], 'rua_security_noncea')) {
+    if (!wp_verify_nonce($_POST['nonce'], 'rua_security_nonce')) {
 
       wp_send_json_error( array( "message" => __("Nonce not verified. Please reload !") ) );
 
