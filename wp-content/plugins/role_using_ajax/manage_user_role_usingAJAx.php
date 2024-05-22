@@ -87,8 +87,10 @@ class Manage_user_role_usingAJAx
 
 
     //check if the nonce is valid
-    if (!wp_verify_nonce($_POST['nonce'], 'rua_security_nonce')) {
-      die('Busted!');
+    if (!wp_verify_nonce($_POST['nonce'], 'rua_security_noncea')) {
+
+      wp_send_json_error( array( "message" => __("Nonce not verified. Please reload !") ) );
+
     }
 
     $userdata = [];
@@ -104,27 +106,6 @@ class Manage_user_role_usingAJAx
       continue;
     }
     $userdata["capabilities"] = $temp;
-
-
-    // if (
-    //   !isset($_POST['name_of_nonce_field'])
-    //   || !wp_verify_nonce($_POST['name_of_nonce_field'], 'custom_action_nonce')
-    // ) {
-
-    //   exit(
-    //     json_encode(
-    //       array(
-    //         'status' => false,
-    //         'message' => 'The form is not valid'
-    //       )
-    //     )
-    //   );
-
-    // }
-
-
-
-
 
 
     //leaving a hook to add the role to the user roles
@@ -149,7 +130,6 @@ class Manage_user_role_usingAJAx
       $role_data["capabilities"],
 
     );
-
 
   }
 
