@@ -10,7 +10,7 @@
  */
 defined('ABSPATH') or die( 'Unauthorized to access this file!!' );
 
-include dirname(__FILE__) . '/autoloader.php';
+include_once dirname(__FILE__) . '/autoloader.php';
 
 class Role_using_ajax {
   public function __construct(){
@@ -18,12 +18,7 @@ class Role_using_ajax {
    $roleManager =  new Plugins\Role_using_ajax\Manage_user_role_usingAJAx();
     new Plugins\Role_using_ajax\Role_registration_template_shortcode( $roleManager );
     
-    wp_enqueue_script('customjs' , plugins_url( 'role_using_ajax/js/store.js', 'role_using_ajax' ) , ['jquery'] , '1.0.0');
-
-    wp_localize_script('customjs','my_ajax_obj',array(
-      'ajax_url' => admin_url('admin-ajax.php'),
-      // 'role_using_ajax_nonce' => wp_create_nonce()
-    ));
+  
 
 
   }

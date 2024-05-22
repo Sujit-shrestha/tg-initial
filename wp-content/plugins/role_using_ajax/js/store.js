@@ -9,7 +9,11 @@ function(event) {
 		url:my_ajax_obj.ajax_url,
 		data:{
 			'data': form,
-			'action': 'custom_action'
+			'action': 'custom_action',
+			'author' : my_ajax_obj.current_user_id,
+			'nonce' : my_ajax_obj.rua_nonce
+	
+		
 		},
 		type:'post',
 		success:function(result){

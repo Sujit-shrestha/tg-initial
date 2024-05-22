@@ -31,7 +31,7 @@ class Manage_user_role_usingAJAx
     add_action('roleusingajax_add_user_role', array($this, 'role_adder'));
 
     //adding js
-    // add_action('admin_enqueue_scripts', array($this, 'my_enqueue'));
+    add_action('wp_enqueue_scripts', array($this, 'myEnqueue'));
 
     // add_action('wp_ajax_contact_us' , array( $this , 'ajax_contact_us_form_handler' ));
 
@@ -48,7 +48,7 @@ class Manage_user_role_usingAJAx
     $o = '
     <h1> Provide new user role </h1>
     <form class="wordpress-ajax-form" id="wordpress_ajax_form"';
-    // $o .= admin_url('admin-ajax.php');
+
     $o .= '>
     
     <label name="user_role" for="user_role">User Role </label>
@@ -83,15 +83,21 @@ class Manage_user_role_usingAJAx
   public function role_form_handler()
   {
     //parsing the serialized string
-    parse_str($_POST["data"], $test);
+    parse_str($_POST["data"], $formData);
+
+
+    //check if the nonce is valid
+    if (!wp_verify_nonce($_POST['nonce'], 'rua_security_nonce')) {
+      die('Busted!');
+    }
 
     $userdata = [];
     //sanitizaiton task
-    $userRole = sanitize_text_field($test["user_role"]);
+    $userRole = sanitize_text_field($formData["user_role"]);
     $temp = [];
     $userdata["user_role"] = $userRole;
     // $user capabilities
-    foreach ($test as $key => $value) {
+    foreach ($formData as $key => $value) {
       if (str_starts_with($key, 'usercap_')) {
         $temp[explode('usercap_', $key)[1]] = sanitize_text_field($value);
       }
@@ -125,10 +131,10 @@ class Manage_user_role_usingAJAx
 
     do_action('roleusingajax_add_user_role', $userdata);
 
-   wp_send_json_success( array( "message" => __( "Data received successfully!!")  , 'data' => $userdata) );
+    wp_send_json_success(array("message" => __("Data received successfully!!"), 'data' => $userdata));
 
-   wp_send_json_error( array( "message" => __( "Error while processing data !!" ) , 'data' => [] ));
-    
+    wp_send_json_error(array("message" => __("Error while processing data !!"), 'data' => []));
+
   }
 
 
@@ -145,5 +151,25 @@ class Manage_user_role_usingAJAx
     );
 
 
+  }
+
+  /**
+   * Enqueing required scripts
+   *
+   * @return void
+   */
+  public function myEnqueue()
+  {
+
+    //including the js file 
+    wp_enqueue_script('customjs', plugins_url('role_using_ajax/js/store.js', 'role_using_ajax'), ['jquery'], '1.0.0');
+
+    //Localization for ajax requests requirements
+    wp_localize_script('customjs', 'my_ajax_obj', array(
+      'ajax_url' => admin_url('admin-ajax.php'),
+      'current_user_id' => get_current_user_id(),
+      'rua_nonce' => wp_create_nonce('rua_security_nonce')
+    )
+    );
   }
 }
