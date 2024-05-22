@@ -17,6 +17,15 @@ class Role_using_ajax {
 
    $roleManager =  new Plugins\Role_using_ajax\Manage_user_role_usingAJAx();
     new Plugins\Role_using_ajax\Role_registration_template_shortcode( $roleManager );
+    
+    error_log(print_r(plugins_url( 'role_using_ajax/js/store.js', 'role_using_ajax' ), true));
+    wp_enqueue_script('customjs' , plugins_url( 'role_using_ajax/js/store.js', 'role_using_ajax' ) , ['jquery'] , '1.0.0');
+    wp_localize_script('customjs','my_ajax_obj',array(
+      'ajax_url' => admin_url('admin-ajax.php'),
+      // 'role_using_ajax_nonce' => wp_create_nonce()
+    ));
+
+
   }
   /**
    * Activation jobs
