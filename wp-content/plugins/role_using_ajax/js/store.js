@@ -13,12 +13,17 @@ function(event) {
 			'author' : my_ajax_obj.current_user_id,
 			'nonce' : my_ajax_obj.rua_nonce
 	
-		
 		},
 		type:'post',
 		success:function(result){
-			
+			if ( ! result.success ) {
 
+				window.location.replace(result.data.redirect_url);
+
+			}
+
+		},
+		error : function(){
 		}
 
 	});

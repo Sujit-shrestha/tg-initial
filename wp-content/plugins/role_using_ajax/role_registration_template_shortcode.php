@@ -6,7 +6,7 @@ use Plugins\Role_using_ajax\Manage_user_role_usingAJAx as RoleManager;
 defined( 'ABSPATH' ) || exit;
 
 class Role_registration_template_shortcode{
-  //class instance of 
+  //class instance 
   private $roleManager;
   public function __construct( RoleManager $roleManager  ){
     $this->roleManager = $roleManager;

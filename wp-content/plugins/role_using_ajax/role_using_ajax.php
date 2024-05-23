@@ -15,6 +15,8 @@ include_once dirname(__FILE__) . '/autoloader.php';
 class Role_using_ajax {
   public function __construct(){
 
+    
+
    $roleManager =  new Plugins\Role_using_ajax\Manage_user_role_usingAJAx();
     new Plugins\Role_using_ajax\Role_registration_template_shortcode( $roleManager );
     
