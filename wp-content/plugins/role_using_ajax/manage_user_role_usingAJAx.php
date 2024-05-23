@@ -16,8 +16,6 @@ class Manage_user_role_usingAJAx
     //initiates all hooks
     $this->initHooks();
 
-
-
   }
 
   /**
@@ -32,12 +30,9 @@ class Manage_user_role_usingAJAx
     add_action('wp_ajax_custom_action', array($this, 'role_form_handler'));
     add_action('wp_ajax_nopriv_custom_action', array($this, 'role_form_handler'));
     add_action('roleusingajax_add_user_role', array($this, 'role_adder'));
-    // add_action('role_form_handling' , array( $this , 'loginChecks' ));
 
     //adding js
     add_action('wp_enqueue_scripts', array($this, 'myEnqueue'));
-
-    // add_action('wp_ajax_contact_us' , array( $this , 'ajax_contact_us_form_handler' ));
 
   }
   /**
@@ -101,17 +96,19 @@ class Manage_user_role_usingAJAx
     //check for login
     $logged_in = $this->loginChecks();
 
-    if( ! $logged_in ){
+    if (!$logged_in) {
       $url = wp_login_url();
-      
-      wp_send_json_error(array(
-        'message' =>  __('Error'),
-        'redirect_url' => esc_html__($url),
-      ));
+
+      wp_send_json_error(
+        array(
+          'message' => __('Error'),
+          'redirect_url' => esc_html__($url),
+        )
+      );
       exit;
-      
+
     }
- 
+
 
     //parsing the serialized string
     parse_str($_POST["data"], $formData);
@@ -121,6 +118,7 @@ class Manage_user_role_usingAJAx
     if (!wp_verify_nonce($_POST['nonce'], 'rua_security_nonce')) {
 
       wp_send_json_error(array("message" => __("Nonce not verified. Please reload !")));
+      exit;
 
     }
 
@@ -131,14 +129,18 @@ class Manage_user_role_usingAJAx
 
     if (!in_array("administrator", $user_role->roles)) {
       wp_send_json_error(array("message" => __("User does not have required privileges. Please contact admin ! ")));
+      exit;
     }
 
 
+    //array to store user input data
     $userdata = [];
+
     //sanitizaiton task
     $userRole = sanitize_text_field($formData["user_role"]);
     $temp = [];
     $userdata["user_role"] = $userRole;
+
     // $user capabilities
     foreach ($formData as $key => $value) {
       if (str_starts_with($key, 'usercap_')) {
@@ -150,12 +152,11 @@ class Manage_user_role_usingAJAx
 
 
     //leaving a hook to add the role to the user roles
-
     do_action('roleusingajax_add_user_role', $userdata);
 
-    wp_send_json_success(array("message" => __("Data received successfully!!"), 'data' =>$userdata));
 
-    wp_send_json_error(array("message" => __("Error while processing data !!"), 'data' => []));
+    wp_send_json_success(array("message" => __("Data received successfully!!"), 'data' => $userdata));
+    exit;
 
   }
 
