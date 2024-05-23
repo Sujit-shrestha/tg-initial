@@ -10,19 +10,22 @@
  */
 defined('ABSPATH') or die( 'Unauthorized to access this file!!' );
 
-include_once dirname(__FILE__) . '/autoloader.php';
+require_once dirname(__FILE__) . '/autoloader.php';
 
-class Role_using_ajax {
-  public function __construct(){
+final class Role_using_ajax {
 
-    
+  /**
+   * Constructor
+   */
+  private function __construct(){ 
 
    $roleManager =  new Plugins\Role_using_ajax\Manage_user_role_usingAJAx();
     new Plugins\Role_using_ajax\Role_registration_template_shortcode( $roleManager );
     
-  
+  }
 
-
+  static function getInstance(){
+    return new self();
   }
   /**
    * Activation jobs
@@ -54,7 +57,7 @@ class Role_using_ajax {
 if( class_exists( 'Role_using_ajax' ) ) {
 
   //instantiation
-  $role_using_ajax = new Role_using_ajax();
+    $role_using_ajax =  Role_using_ajax::getInstance();
 }
 
 register_activation_hook(
