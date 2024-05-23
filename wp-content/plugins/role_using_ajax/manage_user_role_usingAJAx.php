@@ -105,8 +105,8 @@ class Manage_user_role_usingAJAx
       $url = wp_login_url();
       
       wp_send_json_error(array(
-        'message' => 'Error',
-        'redirect_url' => $url,
+        'message' =>  __('Error'),
+        'redirect_url' => esc_html__($url),
       ));
       exit;
       
@@ -153,7 +153,7 @@ class Manage_user_role_usingAJAx
 
     do_action('roleusingajax_add_user_role', $userdata);
 
-    wp_send_json_success(array("message" => __("Data received successfully!!"), 'data' => $userdata));
+    wp_send_json_success(array("message" => __("Data received successfully!!"), 'data' =>$userdata));
 
     wp_send_json_error(array("message" => __("Error while processing data !!"), 'data' => []));
 
@@ -166,8 +166,8 @@ class Manage_user_role_usingAJAx
   public function role_adder($role_data)
   {
     add_role(
-      $role_data["user_role"],
-      ucfirst($role_data["user_role"]),
+      esc_html__($role_data["user_role"]),
+      esc_html__(ucfirst($role_data["user_role"])),
       $role_data["capabilities"],
 
     );
@@ -188,7 +188,7 @@ class Manage_user_role_usingAJAx
     //Localization for ajax requests requirements
     wp_localize_script(
       'customjs',
-      'my_ajax_obj',
+      __('my_ajax_obj'),
       array(
         'ajax_url' => admin_url('admin-ajax.php'),
         'current_user_id' => get_current_user_id(),
